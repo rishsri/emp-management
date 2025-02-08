@@ -1,0 +1,93 @@
+.glass-card {
+    background: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(12px);
+    border-radius: 1rem;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    padding: 2rem;
+}
+
+.employee-list {
+    padding: 1.5rem;
+    border-bottom: 1px solid var(--color-gray-100);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.employee {
+   margin-top: 30px;
+}
+
+.employee-heading {
+    margin-bottom: 0.25rem;
+}
+
+.add-employee {
+    margin-right: 0.5rem;
+}
+
+.employee-card {
+    background: var(--color-white);
+    border-radius: 0.75rem;
+    padding: 1.5rem;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.2s;
+    margin: 20px 0;
+  }
+
+  .employee-card:hover {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  .employee-info {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--color-gray-600);
+    margin-top: 0.5rem;
+  }
+
+  .text-center {
+    text-align: center;
+    padding: 4rem 1rem;
+  }
+
+  .icon-user-plus {
+    height: 3rem; /* 12px * 3 */
+    width: 3rem;
+    margin: 0 auto;
+    color: var(--color-gray-400);
+    margin-bottom: 1rem;
+  }
+
+  .heading-lg {
+    margin-bottom: 0.5rem;
+  }
+
+  .text-gray {
+    color: gray; /* Adjust based on your theme */
+    margin-bottom: 2rem;
+  }
+
+  .btn-primary {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  .icon-user-plus-small {
+    height: 1.25rem; /* 5px * 4 */
+    width: 1.25rem;
+    margin-right: 0.5rem;
+  }
+
+  @media (max-width: 640px) {
+  .card-container {
+      width: 82%;
+  }
+
+  .employee-card {
+    flex-direction: column;
+    align-items: unset;
+  }
+}
